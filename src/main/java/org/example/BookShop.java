@@ -16,6 +16,7 @@ public class BookShop {
         while (true) {
             if (menuNum == 1) {
                 printAllBooks(books);
+                System.out.println("Количество отложенных книг " + books.length);
             } else if (menuNum == 2) {
                 books = addBook(user, books);
             } else if (menuNum == 3) {
@@ -26,7 +27,7 @@ public class BookShop {
                 System.out.println("Спасибо, что посетили наш книжный магазин");
                 System.exit(0);
             }
-            System.out.println("Введите номер меню");
+            System.out.println("\nВведите номер меню");
             menuNum = user.nextInt();
         }
     }
